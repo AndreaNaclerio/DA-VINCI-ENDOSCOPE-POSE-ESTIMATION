@@ -29,7 +29,7 @@ In particular 2 different Deep Learning models have been tested:
 ## RESULTS
 The scratch model provides more accurate predictions overall, with only a slight offset in the y-axis and successful capture of the circular camera movement, though it struggles with fast and subtle movements. In contrast, the transfer-learning model captures the general direction but fails to predict accurately, especially in the Z-axis. Despite these challenges, both models successfully identify the overall trajectory shape.
 
-
-
-
-
+<p float="left" align="center">
+  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/2cc3c44c-0fcd-48fe-9fdd-16cf62a0c3cf)" hspace="30"  width="500" heigth="500"/ >
+  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/4c401482-b4fc-498f-bead-4de8edbd0a5b" hspace="30"  width="500" heigth="500"/> 
+</p>
