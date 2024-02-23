@@ -14,8 +14,6 @@ The dataset contains 27 endoscopic videos of porcine cadaver anatomy, captured w
   <img alt="noise"  width="600" heigth="300" src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/ae024879-beef-498a-abd5-53b85d646594">
 </p>
 
-## PRE-PROCESSING
-
 ## MODELS
 To estimate the camera trajectory throughout the video frames, a model was trained to predict the final pose relative to the initial pose using consecutive frames. This simpler task allowed for reconstructing the overall camera path. The model architecture, Two Tails, consisted of two identical branches processing 2 different inputs (frames) in parallel. Each branch used convolutional, activation, and pooling layers to extract relevant features from RGB images.
 In particular 2 different Deep Learning models have been tested:
@@ -29,8 +27,16 @@ In particular 2 different Deep Learning models have been tested:
 ## RESULTS
 The scratch model provides more accurate predictions overall, with only a slight offset in the y-axis and successful capture of the circular camera movement, though it struggles with fast and subtle movements. In contrast, the transfer-learning model captures the general direction but fails to predict accurately, especially in the Z-axis. Despite these challenges, both models successfully identify the overall trajectory shape.
 
-<p float="left" align="center">
-  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/2cc3c44c-0fcd-48fe-9fdd-16cf62a0c3cf)" hspace="30"  width="250" heigth="250"/ >
-  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/4c401482-b4fc-498f-bead-4de8edbd0a5b" hspace="30"  width="250" heigth="250"/> 
-</p>
+<table align=center>
+<tr>
+<td align=center> From scratch model </td>
+<td align=center> ResNet50 </td>
+</tr>
+<tr>
+<td>  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/2cc3c44c-0fcd-48fe-9fdd-16cf62a0c3cf"  width="250" heigth="250" // > </td>
+<td>  <img src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/4c401482-b4fc-498f-bead-4de8edbd0a5b"  width="250" heigth="250" title="This is a Title"//>  </td>
+<!-- <td> <img src=readme\orange.png width=300> </td> -->
+</tr>
 
+   
+              
