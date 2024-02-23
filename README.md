@@ -27,6 +27,7 @@ In particular 2 different Deep Learning models have been tested:
 
 
 ## RESULTS
+The scratch model provides more accurate predictions overall, with only a slight offset in the y-axis and successful capture of the circular camera movement, though it struggles with fast and subtle movements. In contrast, the transfer-learning model captures the general direction but fails to predict accurately, especially in the Z-axis. Despite these challenges, both models successfully identify the overall trajectory shape.
 
 
 
