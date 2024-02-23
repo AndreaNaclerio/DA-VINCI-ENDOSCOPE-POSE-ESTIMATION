@@ -19,7 +19,7 @@ The dataset contains 27 endoscopic videos of porcine cadaver anatomy, captured w
 ## MODELS
 To estimate the camera trajectory throughout the video frames, a model was trained to predict the final pose relative to the initial pose using consecutive frames. This simpler task allowed for reconstructing the overall camera path. The model architecture, Two Tails, consisted of two identical branches processing 2 different inputs (frames) in parallel. Each branch used convolutional, activation, and pooling layers to extract relevant features from RGB images.
 In particular 2 different Deep Learning models have been tested:
-- our model: (CONV2D - BATCH NORMALIZATION - SQUEEZE AND EXPANTION BLOCK - ReLu - MAX POOLING) x 4
+- from scratch main block: CONV2D - BATCH NORMALIZATION - SQUEEZE AND EXPANTION BLOCK - ReLu - MAX POOLING)
 - ResNet50
 <p align="center">
   <img alt="noise" src="https://github.com/AndreaNaclerio/DA-VINCI-ENDOSCOPE-POSE-ESTIMATION/assets/107640468/5091f122-c0bf-473c-ab80-e1a1e618200a">
