@@ -1,5 +1,6 @@
 # DA-VINCI-ENDOSCOPE-POSE-ESTIMATION
-Estimation of endoscope camera motion trajectories from surgical videos with Deep Learning
+Project of Medical robotics laboraroty at Politecnico di Milano
+#
 
 The project aims to build a model that estimates the camera pose between 2 consecutive frames in order to predict the overall camera trajectory
 
